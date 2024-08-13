@@ -1,0 +1,691 @@
+:root {
+    --black: #353535;
+    --blue: #636DAB;
+    --pink: #faa1ab;
+    --lavande: #CE9FBF;
+    --white: #FFF;
+    --gray: #d6caca48;
+    --red: #E77373;
+    --mainBorder: 25px;
+    --mainBorder2: 40px;
+    --littleMargin:30px 50px;
+    --bigMargin:50px 150px;
+}
+
+
+
+/* Здесь дефолтные настройки */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    transition: .4s ease;
+    /* outline: 1px solid red; */
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 80px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    font-size: large;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+body {}
+
+
+
+/* Здесь начинается HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: var(--mainBorder);
+    margin: var(--bigMargin);
+
+}
+
+
+
+.header_logo--large {
+    margin: 0 10px 0 0;
+}
+
+.header_navigation_container {
+    display: flex;
+}
+
+.header_navigation {
+    text-decoration: none;
+    align-self: center;
+    font-size: 1.1rem;
+    margin: 0 30px;
+}
+
+.header_navigation--flex {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(1px, 1vw, 10px);
+    margin: 0 10px;
+}
+
+header a {
+    transition: .4s ease;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Здесь начинается Карточка со ссылкой на детали продукта */
+.card_productDetails:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+
+.card_productDetails {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--littleMargin);
+}
+
+.card_productDetails_title--txt {
+    font-size: clamp(10px, 3vw, 40px)
+}
+
+.card_productDetails_subtitle {
+    font-size: clamp(10px, 5vw, 60px)
+}
+
+.card_productDetails_img {
+    position: relative;
+}
+
+.card_productDetails_img--main {
+    border-radius: var(--mainBorder2);
+    width: 100%;
+}
+
+.card_productDetails_img>img:nth-child(2) {
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    right: 0;
+}
+
+.card_productDetails_img>img:nth-child(3) {
+    position: absolute;
+    width: 30%;
+    bottom: -3%;
+    left: -7%;
+}
+
+.card_productDetails_img>img:nth-child(4) {
+    position: absolute;
+    width: 30%;
+    bottom: 1%;
+    left: -3%;
+}
+
+.card_productDetails_img>img:nth-child(5) {
+    position: absolute;
+    width: 19%;
+    bottom: 3%;
+    left: 13%;
+}
+
+
+
+/* Здесь начинается Блок с кнопкой DISCOVER*/
+.discover_block {
+    margin: 30px 0 100px 0;
+    position: relative;
+    /* border-radius: var(--mainBorder); */
+    background-image: url(/webAboutBabyProject/mainPage/bigImage/creative-composition-stylish-cozy-child-room-interior-with-plush-toys-sofa-commode-armchair-carpet-accessories.png);
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+
+.discover_block>img:nth-child(1) {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+}
+
+.discover_block>img:nth-child(2) {
+    width: 15%;
+    position: absolute;
+    left: 15%;
+    bottom: 35%;
+}
+
+.discover_block>img:nth-child(3) {
+    width: 15%;
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+}
+
+.discover_block>img:nth-child(4) {
+    width: 7%;
+    position: absolute;
+    left: 30%;
+    bottom: 25%;
+}
+
+.discover_block>img:nth-child(5) {
+    width: 8%;
+    position: absolute;
+    right: 30%;
+    bottom: 25%;
+}
+
+.discover_block button {
+    position: absolute;
+    bottom: 15%;
+    left: 41%;
+}
+
+
+
+
+/* Здесь начинается блок с выбором категории товаров */
+.product-category-selector--small {
+    margin: var(--bigMargin);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--mainBorder);
+    font-size: large;
+}
+
+.product-category-selector--small a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.product-category-selector--small a img {
+    border-radius: 100%;
+}
+
+.product-category-selector--small:hover {
+    background-color: var(--gray);
+}
+
+.product-category-selector--small a.category {
+    transition: .4s ease;
+}
+
+.product-category-selector--small a.category:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Здесь начинается Карточка со ссылкой на детали продукта НОМЕР 2 */
+.card_productDetails2:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+
+.card_productDetails2 {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--littleMargin);
+    gap: 200px;
+}
+
+.card_productDetails_title2--txt {
+    font-size: clamp(10px, 3vw, 40px);
+    margin: 30px 0;
+}
+
+.card_productDetails_subtitle2 {
+    font-size: clamp(10px, 3vw, 30px)
+}
+
+
+
+.card_productDetails_img--second {
+    position: relative;
+}
+
+.card_productDetails_img--main {
+    border-radius: var(--mainBorder2);
+    height: 100%;
+}
+
+.card_productDetails_img--second>img:nth-child(2) {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    right: 110%;
+}
+
+.card_productDetails_img--second>img:nth-child(3) {
+    position: absolute;
+    width: 35%;
+    bottom: -2%;
+    left: -15%;
+}
+
+.card_productDetails_img--second>img:nth-child(4) {
+    position: absolute;
+    width: 35%;
+    bottom: -2%;
+    right: 25%;
+}
+
+
+
+
+
+
+
+
+/* Здесь начинаются 3 большие карточки по центру */
+.threecards:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+
+.threecards {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    margin: var(--littleMargin);
+    position: relative;
+
+}
+
+.cards_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+
+}
+
+.cards_item img {
+    border-radius: var(--mainBorder2);
+    width: 95%;
+}
+
+.cards_description {
+    text-align: center;
+    margin-top: 30px;
+    width: 80%;
+    font-size: clamp(5px, 3vw, 30px);
+}
+
+
+
+
+
+/* Здесь начинается блок с BEST SELLER */
+.best-seller:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+
+.best-seller {
+    text-align: center;
+    margin: 0 0 100px 0;
+    padding: 30px;
+}
+
+.best-seller__content {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+
+}
+
+.product-card {
+    width: 30%;
+
+    position: relative;
+}
+
+.highlighted-image {
+    width: 50%;
+
+}
+
+.product-card img:nth-child(1) {
+    width: 100%;
+    height: 87%;
+}
+
+.highlighted-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--mainBorder2);
+}
+
+.best-seller__title {
+    font-size: clamp(5px, 3vw, 40px);
+    font-weight: 400;
+}
+
+.best-seller__content .product-card img:nth-child(2) {
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    left: 0;
+}
+
+.best-seller__content .product-card img:nth-child(3) {
+    position: absolute;
+    width: 5%;
+    top: 13%;
+    left: 4%;
+}
+
+.best-seller__content .product-card .product-card__details {
+    display: flex;
+    height: 13%;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+    background-color: #FFB59B;
+    align-items: center;
+}
+
+.best-seller__content .product-card .product-card__details p {
+    font-size: clamp(5px, 1.5vw, 30px);
+    color: var(--white);
+}
+
+.best-seller__content .product-card .product-card__details button {
+    font-size: clamp(5px, 1.5vw, 30px);
+    color: var(--white);
+    border: none;
+    /* Удаление рамки */
+    background-color: transparent;
+    /* Удаление фона */
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+}
+
+.best-seller__content .product-card .product-card__details button.clicked {
+    color: var(--lavande);
+}
+
+
+
+/* Здесь блок с горизонтальным отделительным Логом */
+.hr-image__logo img {
+    width: 100%;
+}
+
+
+
+/* Здесь блок с New ARRIVALS */
+.new-arrivals__container {
+    margin: var(--littleMargin);
+    text-align: center;
+}
+
+.new-arrivals__container>button {
+    background: none;
+    border: none;
+    color: var(--lavande);
+    cursor: pointer;
+}
+
+.new-arrivals__gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 20px; */
+    justify-content: space-between;
+    justify-items: center;
+    /* border: 5px solid black; */
+    /* width: 80%; */
+
+    /* display: flex; */
+}
+
+.newArrivalsProduct-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    /* border: 5px solid green; */
+}
+
+.newArrivalsProduct-card img {
+    width: 100%;
+    /* border: 5px solid red; */
+}
+
+.newArrivalsProduct-card .product-detais__title {
+    width: 80%;
+}
+
+.newArrivalsProduct-card #button {
+    width: 100%;
+}
+
+.product-detais__title p:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.product-detais__title p:nth-of-type(5) {
+    margin-top: 20px;
+}
+
+
+
+
+/* Здесь начинается блок с EVERITHING A BABY NEEDS */
+.baby_needs_conteiner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEE799;
+    margin: 50px 0;
+}
+
+.baby_needs_img img {
+    border-top-right-radius: var(--mainBorder2);
+    border-bottom-right-radius: var(--mainBorder2);
+}
+
+.card_baby_needs {
+    margin-right: 17%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: clamp(5px, 1vw, 2000px);
+    gap: 10px;
+}
+
+.card_baby_needs h1 {
+    font-size: clamp(5px, 3vw, 200px);
+    font-weight: 150;
+}
+
+.card_baby_needs h1 {
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.card_baby_needs img:nth-of-type(1) {
+    width: 5%;
+    margin-right: 40px;
+
+}
+
+.time {
+    display: flex;
+}
+
+.time+p {
+    margin-left: 70px;
+}
+
+.geo+a {
+    margin-left: 70px;
+}
+
+.geo+a+a {
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+.geo+a+a+img+img+button {
+    margin-left: 70px;
+}
+
+.card_baby_needs img[src="illustration/star.png"] {
+    position: absolute;
+    width: 50%;
+    right: -60%;
+    bottom: 5%;
+}
+
+.card_baby_needs img[src="illustration/curved-arrow3.png"] {
+    position: absolute;
+    width: 25%;
+    bottom: -3%;
+    right: -2%;
+    transform: rotate(5deg);
+}
+
+
+
+/* Здесь начинается FOOTER */
+footer {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 3%;
+}
+
+footer .footer_card--1>*,
+footer .footer_card--2>*,
+footer .footer_card--3>*,
+footer .footer_card--4>* {
+    margin: 10px;
+}
+
+footer .footer_card--2,
+footer .footer_card--3,
+footer .footer_card--4 {
+    margin-top: 15px;
+}
+
+footer h1,
+footer p,
+footer a {
+    color: white;
+}
+
+
+.footer_card--1 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_card--1 div>* {
+    margin: 0 10px;
+
+}
+
+footer .footer_card--1 p:nth-of-type(2) {
+    margin: 50px 0;
+    color: var(--red);
+}
+
+.footer_card--2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card--2 h1{
+    color: var(--red);
+}
+
+.footer_card--3 {
+    display: flex;
+    flex-direction: column;
+}
+.footer_card--3 h1{
+    color: var(--red);
+}
+.social_media {
+    display: flex;
+    gap: 40px;
+}
+
+.footer_card--4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card--4 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card--4 form>* {
+    margin: 10px 0;
+}
+
+.footer_card--4 form input[type="email"] {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.footer_card--4 form button[type="submit"] {
+    cursor: pointer;
+    text-align: left;
+    margin-left: 0;
+    border: none;
+    color: white;
+    width: fit-content;
+    background-color: var(--black);
+    padding: 10px;
+}
+
+
+
+
+
+
+/* Здесь начинается CSS для мобильных устройств */
+@media(max-width: 768px)
